@@ -1,0 +1,21 @@
+﻿@model  Identity_MVC.Models.LoginModel
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Login</h2>
+
+<div>
+    @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+    {
+        @Html.ValidationSummary();
+        <br />
+        @Html.LabelFor(un => un.Username) @Html.TextBoxFor(un => un.Username);
+        <br />
+        @Html.LabelFor(pw => pw.Password) @Html.TextBoxFor(pw => pw.Password);
+
+        <input type="submit" value="Login" />
+
+    }
+</div>
