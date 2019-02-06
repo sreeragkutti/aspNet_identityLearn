@@ -7,7 +7,10 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Owin;
 
-
+  // install-package Microsoft.AspNet.Identity.Owin
+    // install-package Microsoft.AspNet.Identity.EntityFramework
+    // install-package Microsoft.Owin.Host.SystemWeb
+    // install-package Microsoft.Owin.Security.Cookies
 [assembly: OwinStartup(typeof(Identity_MVC.Startup))]
 
 namespace Identity_MVC
